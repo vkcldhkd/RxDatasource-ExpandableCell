@@ -1,0 +1,85 @@
+PODS:
+  - Alamofire (5.6.4)
+  - Codextended (0.3.0)
+  - Differentiator (5.0.0)
+  - Kingfisher (5.15.8):
+    - Kingfisher/Core (= 5.15.8)
+  - Kingfisher/Core (5.15.8)
+  - ReactorKit (3.2.0):
+    - RxSwift (~> 6.0)
+    - WeakMapTable (~> 1.1)
+  - ReusableKit (3.0.0):
+    - ReusableKit/Core (= 3.0.0)
+  - ReusableKit/Core (3.0.0)
+  - RxAlamofire (6.1.1):
+    - RxAlamofire/Core (= 6.1.1)
+  - RxAlamofire/Core (6.1.1):
+    - Alamofire (~> 5.4)
+    - RxSwift (~> 6.0)
+  - RxCocoa (6.5.0):
+    - RxRelay (= 6.5.0)
+    - RxSwift (= 6.5.0)
+  - RxDataSources (5.0.0):
+    - Differentiator (~> 5.0)
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
+  - RxKingfisher (2.1.0):
+    - Kingfisher (~> 5)
+    - RxCocoa (~> 6)
+    - RxSwift (~> 6)
+  - RxRelay (6.5.0):
+    - RxSwift (= 6.5.0)
+  - RxSwift (6.5.0)
+  - SnapKit (5.6.0)
+  - Then (3.0.0)
+  - WeakMapTable (1.2.0)
+
+DEPENDENCIES:
+  - Codextended
+  - ReactorKit
+  - ReusableKit
+  - RxAlamofire
+  - RxDataSources
+  - RxKingfisher
+  - RxSwift
+  - SnapKit
+  - Then
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Codextended
+    - Differentiator
+    - Kingfisher
+    - ReactorKit
+    - ReusableKit
+    - RxAlamofire
+    - RxCocoa
+    - RxDataSources
+    - RxKingfisher
+    - RxRelay
+    - RxSwift
+    - SnapKit
+    - Then
+    - WeakMapTable
+
+SPEC CHECKSUMS:
+  Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
+  Codextended: f384271b8694376ad766ddbf2a011efbfdcee905
+  Differentiator: e8497ceab83c1b10ca233716d547b9af21b9344d
+  Kingfisher: a3c03d702433fa6cfedabb2bddbe076fb8f2e902
+  ReactorKit: e8b11d6b9c415405f381669b095c154a05b59eca
+  ReusableKit: e5f853ad4652e411f96b6119b2488afa12929be6
+  RxAlamofire: beb75a1c452d0de225651db4903f5d29d034a620
+  RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
+  RxDataSources: aa47cc1ed6c500fa0dfecac5c979b723542d79cf
+  RxKingfisher: a602fbf8751d756a7cc6190ddfedc2ce0d301377
+  RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  Then: 844265ae87834bbe1147d91d5d41a404da2ec27d
+  WeakMapTable: 05c694ce8439a7a9ebabb56187287a63c57673d6
+
+PODFILE CHECKSUM: ddf6f488efd72a8f8d3ca92e8bd5ffeaeef1dc87
+
+COCOAPODS: 1.11.3
