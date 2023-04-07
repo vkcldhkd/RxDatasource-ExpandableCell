@@ -67,7 +67,10 @@ final class MainViewReactor: Reactor {
             
         case let .setImageListResponse(response):
             var newState = state
-            let sectionItems = self.createSectionItems(items: response)
+            let sectionItems = self.createSectionItems(
+                items: response,
+                currentItems: newState.section.last?.items
+            )
             newState.section = [.list(sectionItems)]
             return newState
 
@@ -77,11 +80,21 @@ final class MainViewReactor: Reactor {
 
 private extension MainViewReactor {
     func createSectionItems(
-        items: [ImageListItem]?
+        items: [ImageListItem]?,
+        currentItems: [ImageListSectionItem]? = nil
     ) -> [ImageListSectionItem] {
         guard let items = items else { return [.empty] }
+        
         return items
-            .map { ImageItemViewReactor(model: $0) }
+            .map { item -> (ImageListItem, Bool) in
+                let isExpanded = currentItems?
+                    .filter { $0.getCellReactor()?.currentState.model.downloadURL == item.downloadURL }
+                    .first?
+                    .getCellReactor()?.currentState.isExpanded ?? false
+            
+                return (item, isExpanded)
+            }
+            .map { ImageItemViewReactor(model: $0.0, isExpanded: $0.1) }
             .map { ImageListSectionItem.item($0) }
     }
 }

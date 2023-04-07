@@ -17,6 +17,7 @@ extension MainViewController {
                 case let .item(cellReacotr):
                     self?.tableView.beginUpdates()
                     cellReacotr.action.onNext(.updateExpandedState)
+                    
                     self?.tableView.endUpdates()
                 default: return
                 }

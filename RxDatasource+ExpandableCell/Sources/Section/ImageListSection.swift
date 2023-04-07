@@ -28,4 +28,11 @@ extension ImageListSection: SectionModelType {
 enum ImageListSectionItem {
     case empty
     case item(ImageItemViewReactor)
+    
+    func getCellReactor() -> ImageItemViewReactor? {
+        switch self {
+        case .empty: return nil
+        case let .item(cellReactor): return cellReactor
+        }
+    }
 }

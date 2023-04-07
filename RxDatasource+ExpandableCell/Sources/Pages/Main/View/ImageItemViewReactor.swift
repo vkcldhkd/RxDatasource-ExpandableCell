@@ -24,11 +24,14 @@ final class ImageItemViewReactor: Reactor {
     
     let initialState: State
     
-    init(model: ImageListItem) {
+    init(
+        model: ImageListItem,
+        isExpanded: Bool = false
+    ) {
         defer { _ = self.state }
         self.initialState = State(
             model: model,
-            isExpanded: false
+            isExpanded: isExpanded
         )
     }
     
